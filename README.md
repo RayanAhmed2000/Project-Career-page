@@ -5,5 +5,6 @@ A career page created form flask framework hosted on AWS EC2 and saves uploaded 
 - Create 2 EC2 instances
   - Application server (Install dependencies and host application code on this from ([this repo](https://github.com/RayanAhmed2000/aws-live-project))
     - steps :
-        - 
+        - lauch ubuntu ec2
+        - create a SG allowing HTTP/HTTPS/SSH/MYSQL
   - Databse Server (Install mysql on this server and create a user grant him root privlidges)
