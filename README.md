@@ -18,3 +18,16 @@ A career page created form flask framework hosted on AWS EC2 and saves uploaded 
           ```
         -  Edit config file paste the creds of DB and Application server IP, region and S3 bucket name
   - Databse Server (Install mysql on this server and create a user grant him root privlidges)
+    - steps
+        - Update packages and install Database
+          ```
+          sudo apt-get update
+          sudo apt-get install mysql-client
+          sudo apt install mysql-server
+          sudo mysql_secure_installation
+          mysql -u root -p
+          ```
+        - Login in mysql and create a database and a table inside the database and then create a user and grant it root privilidges
+          ```
+          
+          ``` 
