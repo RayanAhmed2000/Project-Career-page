@@ -39,3 +39,31 @@ A career page created form flask framework hosted on AWS EC2 and saves uploaded 
           grant all privileges on *.* to 'rayan'@'%' with grant option;
           FLUSH PRIVILEGES;
           ```
+
+# Next
+- Create an S3 bucket copy bucket name and put in the config file
+- Create a role to S3 full access and attach to application server so that it can upload resume on S3
+
+# Add ons 
+- Create a self signed certificate to access website through https
+```
+sudo mkdir /etc/ssl/mycerts
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/mycerts/selfsigned.key -out /etc/ssl/mycerts/selfsigned.crt
+```
+- Create a tab image
+- Open https://favicon.io/
+- create and download image (it will be in format .ico)
+- Put it in sub folder named static inside your flask app main folder
+- Example structure
+```
+my_flask_app/
+├── static/
+│   └── favicon.ico
+├── templates/
+├── app.py
+```
+- after that make code changes in .html webpage file
+```
+<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+```
+
