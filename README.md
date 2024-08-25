@@ -29,5 +29,13 @@ A career page created form flask framework hosted on AWS EC2 and saves uploaded 
           ```
         - Login in mysql and create a database and a table inside the database and then create a user and grant it root privilidges
           ```
-          
-          ``` 
+          Create database applicant;
+          use applicant;
+          create table data( MobNo varchar(20), FirstName (20), LastName varchar(20), Skills varchar(40), Location varchar(40)); 
+          ```
+        - Create user and grant it root privlidges
+          ```
+          Create user 'rayan'@'%' IDENTIFIED by 'Admin@123';
+          grant all privileges on *.* to 'rayan'@'%' with grant option;
+          FLUSH PRIVILEGES;
+          ```
