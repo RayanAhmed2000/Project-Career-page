@@ -16,5 +16,5 @@ A career page created form flask framework hosted on AWS EC2 and saves uploaded 
           sudo apt-get install python3-pymysql
           sudo apt-get install python3-boto3
           ```
-        -  
+        -  Edit config file paste the creds of DB and Application server IP, region and S3 bucket name
   - Databse Server (Install mysql on this server and create a user grant him root privlidges)
